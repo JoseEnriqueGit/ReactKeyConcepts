@@ -1,11 +1,11 @@
 import React from "react";
 
-type ControlPanelProps = {
+type NameBadgeProps = {
   name: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const ControlPanel = ({ name, onChange }: ControlPanelProps) => {
+const NameBadge = ({ name, onChange }: NameBadgeProps) => {
   return (
     <form
       className="flex flex-row gap-4 text-white bg-primary-10"
@@ -25,4 +25,4 @@ const ControlPanel = ({ name, onChange }: ControlPanelProps) => {
   );
 };
 
-export default ControlPanel;
+export default NameBadge;
